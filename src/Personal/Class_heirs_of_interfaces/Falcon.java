@@ -1,8 +1,9 @@
 package Personal.Class_heirs_of_interfaces;
 
 import Personal.GoAble_FlyAble_SwimAble.FlyAble;
+import Personal.heirs_of_interfaces.FastFly;
 
-public class Falcon implements FlyAble {
+public class Falcon extends Animal implements FlyAble, FastFly {
     Double flies;
 
     public Falcon(){
@@ -18,5 +19,10 @@ public class Falcon implements FlyAble {
     @Override
     public double fly() {
         return 0;
+    }
+
+    @Override
+    public void flying() {
+        FastFly.super.flying();
     }
 }

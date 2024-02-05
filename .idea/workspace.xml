@@ -4,26 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7027211-579f-46f7-894e-6842eb057ffd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_OOP_HomeWork_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Cheetah.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Dolphin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Duck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Falcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Sparrow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Tortoise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Nurse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Personal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/GoAble_FlyAble_SwimAble/FlyAble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/GoAble_FlyAble_SwimAble/GoAble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/GoAble_FlyAble_SwimAble/SwimAble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personal/VeterinaryClinic.java" afterDir="false" />
+    <list default="true" id="e7027211-579f-46f7-894e-6842eb057ffd" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/WorkData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal/heirs_of_interfaces/FastFly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal/heirs_of_interfaces/FastRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal/heirs_of_interfaces/FastSwim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal/heirs_of_interfaces/SlowFly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal/heirs_of_interfaces/SlowRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personal/heirs_of_interfaces/SlowSwim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Cheetah.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Cheetah.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Dolphin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Dolphin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Duck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Falcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Falcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Sparrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Sparrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Tortoise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Class_heirs_of_interfaces/Tortoise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Nurse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Personal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/Doctor_Nurse/Personal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personal/VeterinaryClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personal/VeterinaryClinic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Application.VeterinaryClinic.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -76,6 +78,19 @@
       <option name="presentableId" value="Default" />
       <updated>1706977486176</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1707056915759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707056915759</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

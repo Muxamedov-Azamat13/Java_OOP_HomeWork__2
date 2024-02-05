@@ -1,10 +1,11 @@
 package Personal.Class_heirs_of_interfaces;
 
 import Personal.GoAble_FlyAble_SwimAble.GoAble;
+import Personal.heirs_of_interfaces.FastRun;
 
-public class Cheetah implements GoAble {
-
+public class Cheetah extends Animal implements GoAble, FastRun {
     Double runner;
+
 
     public Cheetah(){
         super();
@@ -19,5 +20,11 @@ public class Cheetah implements GoAble {
     @Override
     public double run() {
         return 0;
+    }
+
+
+    @Override
+    public void fastRun() {
+        FastRun.super.fastRun();
     }
 }
