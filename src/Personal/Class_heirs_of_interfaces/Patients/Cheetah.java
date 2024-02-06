@@ -1,9 +1,9 @@
-package Personal.Class_heirs_of_interfaces;
+package Personal.Class_heirs_of_interfaces.Patients;
 
 import Personal.GoAble_FlyAble_SwimAble.GoAble;
 import Personal.heirs_of_interfaces.FastRun;
 
-public class Cheetah extends Animal implements GoAble, FastRun {
+public  class Cheetah extends Animal implements GoAble, FastRun {
     Double runner;
 
 

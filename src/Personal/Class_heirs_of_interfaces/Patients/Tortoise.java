@@ -1,9 +1,9 @@
-package Personal.Class_heirs_of_interfaces;
+package Personal.Class_heirs_of_interfaces.Patients;
 
 import Personal.GoAble_FlyAble_SwimAble.GoAble;
 import Personal.heirs_of_interfaces.SlowRun;
 
-public class Tortoise extends Animal implements GoAble, SlowRun {
+public  class Tortoise extends Animal implements GoAble{
 
     Double runner;
 
@@ -17,13 +17,9 @@ public class Tortoise extends Animal implements GoAble, SlowRun {
         return "Tortoise двигаеться со скоростью " + runner;
     }
 
+
     @Override
     public double run() {
         return 0;
-    }
-
-    @Override
-    public void running() {
-        SlowRun.super.running();
     }
 }

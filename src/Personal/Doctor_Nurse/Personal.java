@@ -1,6 +1,6 @@
 package Personal.Doctor_Nurse;
 
-public abstract class Personal {
+public class Personal {
     protected String surName;
     protected String name;
     protected String specialization;

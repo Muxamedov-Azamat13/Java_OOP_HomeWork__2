@@ -1,9 +1,9 @@
-package Personal.Class_heirs_of_interfaces;
+package Personal.Class_heirs_of_interfaces.Patients;
 
 import Personal.GoAble_FlyAble_SwimAble.SwimAble;
 import Personal.heirs_of_interfaces.FastSwim;
 
-public class Dolphin extends Animal implements SwimAble, FastSwim {
+public  class Dolphin extends Animal implements SwimAble, FastSwim {
 
     Double swimmer;
 

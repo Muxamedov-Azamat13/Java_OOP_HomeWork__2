@@ -1,9 +1,9 @@
-package Personal.Class_heirs_of_interfaces;
+package Personal.Class_heirs_of_interfaces.Patients;
 
 import Personal.GoAble_FlyAble_SwimAble.SwimAble;
 import Personal.heirs_of_interfaces.SlowSwim;
 
-public class Duck extends Animal implements SwimAble, SlowSwim {
+public  class Duck extends Animal implements SwimAble, SlowSwim {
     Double swimmer;
 
     public Duck(){

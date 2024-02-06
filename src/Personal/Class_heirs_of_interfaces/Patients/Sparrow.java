@@ -1,9 +1,9 @@
-package Personal.Class_heirs_of_interfaces;
+package Personal.Class_heirs_of_interfaces.Patients;
 
 import Personal.GoAble_FlyAble_SwimAble.FlyAble;
 import Personal.heirs_of_interfaces.SlowFly;
 
-public class Sparrow extends Animal implements FlyAble, SlowFly {
+public  class Sparrow extends Animal implements FlyAble, SlowFly {
     Double flies;
 
     public Sparrow(){

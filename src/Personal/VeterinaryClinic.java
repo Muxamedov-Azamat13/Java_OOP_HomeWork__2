@@ -1,92 +1,79 @@
 package Personal;
 
-import Personal.Class_heirs_of_interfaces.*;
-import Personal.Doctor_Nurse.Doctor;
-import Personal.Doctor_Nurse.Nurse;
+import Personal.Class_heirs_of_interfaces.Patients.*;
 import Personal.Doctor_Nurse.Personal;
 import Personal.GoAble_FlyAble_SwimAble.FlyAble;
-import Personal.heirs_of_interfaces.*;
+import Personal.GoAble_FlyAble_SwimAble.GoAble;
+import Personal.GoAble_FlyAble_SwimAble.SwimAble;
 
-import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 public class VeterinaryClinic {
 
-    public void addAnimals(){
-        List<Animal> animal = new ArrayList<Animal>();
+    private List<Personal> personals;
+    private List<Animal> patients;
 
-        Cheetah cheetah = new Cheetah();
-        Dolphin dolphin = new Dolphin();
-        Duck duck = new Duck();
-        Falcon falcon = new Falcon();
-        Sparrow sparrow = new Sparrow();
-        Tortoise tortoise = new Tortoise();
-
-        animal.add(cheetah);
-        animal.add(dolphin);
-        animal.add(duck);
-        animal.add(falcon);
-        animal.add(sparrow);
-        animal.add(tortoise);
-        System.out.println(animal);
+    public VeterinaryClinic(){
+        this.personals = new ArrayList<>();
+        this.patients = new ArrayList<>();
     }
 
-    public void getRunAnimal(){
-        List<FastRun> fastRuns = new ArrayList<>();
-        List<SlowRun> slowRuns = new ArrayList<>();
-
-        Cheetah cheetah = new Cheetah();
-        fastRuns.add(cheetah);
-
-        Tortoise tortoise = new Tortoise();
-        slowRuns.add(tortoise);
-
-        System.out.println(fastRuns);
-        System.out.println(slowRuns);
+    public List<Animal> getPatients(){
+        return patients;
     }
 
-    public void getSwimAnimal(){
-        List<FastSwim> fastSwims = new ArrayList<>();
-        List<SlowSwim> slowSwims = new ArrayList<>();
-
-        Dolphin dolphin = new Dolphin();
-        fastSwims.add(dolphin);
-
-        Duck duck = new Duck();
-        slowSwims.add(duck);
-
-        System.out.println(fastSwims);
-        System.out.println(slowSwims);
+    public List<Personal> getPersonals(){
+        return personals;
     }
 
-    public void getFlyAnimal(){
-        List<FastFly> fastFly = new ArrayList<>();
-        List<SlowFly> slowFly = new ArrayList<>();
-
-        Falcon falcon = new Falcon();
-        fastFly.add(falcon);
-
-        Sparrow sparrow = new Sparrow();
-        slowFly.add(sparrow);
-
-        System.out.println(fastFly);
-        System.out.println(slowFly);
+    public void addPersonal(Personal employee){
+        personals.add(employee);
     }
 
-    public void addPersonal(){
-        List<Personal> personal = new ArrayList<>();
-
-        Doctor doctor = new Doctor("Jonathan ","Smith ","Cardiologist",5000D);
-        Nurse nurse = new Nurse("Emma ","Tomphson ","Nurse",1500D);
-
-        personal.add(doctor);
-        personal.add(nurse);
-        System.out.println(personal);
-
-        personal.add(doctor.getData("Cheetah"));
-        personal.add(nurse.getData("Cheetah"));
+    public void addPatients(Animal patient){
+        patients.add(patient);
     }
+
+
+    public List<GoAble> getRunners(List<GoAble> animals) {
+        List<GoAble> runners = new ArrayList<>();
+
+        for (GoAble a : animals) {
+            if (a instanceof Cheetah || a instanceof Tortoise) {
+                runners.add(a);
+                double speed = a.run();
+                System.out.println("Running animal speed: " + speed);
+            }
+        }
+
+        return runners;
+    }
+
+    public List<FlyAble> getFlyers(List<FlyAble> animals) {
+        List<FlyAble> flyers = new ArrayList<>();
+
+        for (FlyAble a : animals) {
+            if (a instanceof Falcon || a instanceof Sparrow) {
+                flyers.add(a);
+                double fly = a.fly();
+                System.out.println("Flying animal speed: " + fly);
+            }
+        }
+        return flyers;
+    }
+
+    public List<SwimAble> getSwimmers(List<SwimAble> animals) {
+        List<SwimAble> swimmers = new ArrayList<>();
+
+        for (SwimAble a : animals) {
+            if (a instanceof Falcon || a instanceof Sparrow) {
+                swimmers.add(a);
+                double swim = a.swim();
+                System.out.println("Swimming animal speed: " + swim);
+            }
+        }
+        return swimmers;
+    }
+
 }
